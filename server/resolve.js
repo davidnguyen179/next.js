@@ -61,7 +61,7 @@ async function isFile (p) {
 }
 
 // This is based on the stackoverflow answer: http://stackoverflow.com/a/33139702/457224
-// We assume we'll get properly normalized path names as p
+// We assume `getTrueFilePath` gets a properly normalized pathname as p
 async function getTrueFilePath (p) {
   let fsPathNormalized = p
   // OSX: HFS+ stores filenames in NFD (decomposed normal form) Unicode format,
